@@ -12,7 +12,6 @@ Disclaimer: natural language descriptions are synthetically generated and may be
 
 ## Instructions
 
-* Fork and clone the repository
 * Implement your AI agent in `generate_testbench` function in `test_harness/agent.py` file
     * Your agent needs to return a complete verilog testbench code in a single string (do not include the module implementation).
     * The agent needs to finish running within 5 minutes or a dummy testbench will be used instead.
