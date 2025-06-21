@@ -10,6 +10,27 @@ The information available to the agent:
 
 Disclaimer: natural language descriptions are synthetically generated and may be incomplete. We believe they contain enough information to find the right implenentation, but do warn that this may not always be the case.
 
+## Infrastructure setup
+
+### SLM category: 
+The prerequisites are iVerilog and OpenROAD-flow-scripts that should be available on your laptops. For SLM problems, you will not be evaluated on hidden testcases!
+
+### LLM category:
+Solving these problems requires the Docker image already available in your GCP VM instance. You can run the docker image as follows to create an environment that has OpenROAD-flow-scripts and iVerilog already installed:
+
+```
+docker run -it --rm \
+  -v ~/iclad_hackathon:/workspace/iclad_hackathon \
+  iclad_hackathon:latest bash
+```
+
+Inside the docker container, you will find this repository already cloned and available to you in 
+
+```
+/workspace/iclad_hackathon/ICLAD-Hackathon-2025/problem-categories
+```
+
+
 ## Instructions
 
 * Implement your AI agent in `generate_testbench` function in `test_harness/agent.py` file
